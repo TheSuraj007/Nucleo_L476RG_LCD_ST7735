@@ -166,7 +166,6 @@ uint32_t ST7735_WriteString(uint16_t x, uint16_t y, const char *stringData, Font
 void ST7735_WriteCharS(int16_t x, int16_t y, char c, FontDef font, int16_t textColor, int16_t bgColor, uint8_t size);
 void ST7735_FillRectangleByPixel(uint16_t x_start, uint16_t y_start, uint16_t width, uint16_t height, uint16_t color);
 // void ST7735_Transparent_Image(uint8_t x, uint8_t y, ImageMonochrome *image, uint16_t color, uint16_t background_color);
-void ST7735_draw_monochrome_vector_image(uint8_t x_start, uint8_t y_start, ImageMonochrome *image, uint16_t color, uint16_t background_color);
 void ST7735_draw_color_image(uint8_t x_start, uint8_t y_start, ImageColor *image);
 void ST7735_draw_color_image_bckg(uint8_t x_start, uint8_t y_start, ImageColor *image);
 void ST7735_draw_monochrome_vector_image_bckg(uint8_t x_start, uint8_t y_start, ImageColor *image, uint16_t color, uint16_t background_color);

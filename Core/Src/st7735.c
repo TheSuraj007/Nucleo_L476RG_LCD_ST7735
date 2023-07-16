@@ -597,31 +597,6 @@ void ST7735_WriteCharS(int16_t x, int16_t y, char c, FontDef font,
 	}
 }
 
-void ST7735_draw_monochrome_vector_image(uint8_t x_start, uint8_t y_start,
-		ImageMonochrome *image, uint16_t color, uint16_t background_color) {
-
-	uint16_t i = 0;
-	LCD_CS0;
-	ST7735_SetAddressWindow(x_start, y_start, x_start + image->width - 1,
-			y_start + image->height - 1);
-
-	while (i < image->width * image->height) {
-		if (image->data[i] == true) {
-			lcd7735_sendData((uint8_t) (color >> 8));
-			lcd7735_sendData((uint8_t) (color));
-		} else {
-			lcd7735_sendData((uint8_t) (background_color >> 8));
-			lcd7735_sendData((uint8_t) (background_color));
-		}
-
-		i++;
-	}
-
-	LCD_CS1
-	; // Unselect
-	return;
-}
-
 void ST7735_draw_monochrome_vector_image_bckg(uint8_t x_start, uint8_t y_start,ImageColor *image, uint16_t color, uint16_t background_color)
 {
 

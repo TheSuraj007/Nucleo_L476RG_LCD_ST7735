@@ -102,7 +102,9 @@ int main(void)
 	ST7735_draw_color_image(0, 0, &spanda_logo);
 //	ST7735_FillRectangle(10, 10, 20, 30, ST7735_YELLOW);
 	HAL_Delay(2000);
-	ST7735_draw_monochrome_vector_image_bckg(0, 0, &lung_image_64, ST7735_DARKGREEN_lungs, ST7735_WHITE);
+//	ST7735_draw_monochrome_vector_image_bckg(0, 0, &lung_image_64, ST7735_DARKGREEN_lungs, ST7735_WHITE);
+//    ST7735_draw_monochrome_vector_image_bckg(35, 40, &icons8listening100_image_64, ST7735_BLACK, ST7735_WHITE);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */

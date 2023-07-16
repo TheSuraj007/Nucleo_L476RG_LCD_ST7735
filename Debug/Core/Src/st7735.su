@@ -21,7 +21,6 @@
 ../Core/Src/st7735.c:531:6:lcd7735_senddata	16	static
 ../Core/Src/st7735.c:535:10:ST7735_WriteString	40	static
 ../Core/Src/st7735.c:550:6:ST7735_WriteCharS	64	static
-../Core/Src/st7735.c:600:6:ST7735_draw_monochrome_vector_image	32	static
-../Core/Src/st7735.c:625:6:ST7735_draw_monochrome_vector_image_bckg	40	static
-../Core/Src/st7735.c:654:6:ST7735_draw_color_image	40	static
-../Core/Src/st7735.c:678:6:ST7735_draw_color_image_bckg	40	static
+../Core/Src/st7735.c:600:6:ST7735_draw_monochrome_vector_image_bckg	40	static
+../Core/Src/st7735.c:629:6:ST7735_draw_color_image	40	static
+../Core/Src/st7735.c:653:6:ST7735_draw_color_image_bckg	40	static
