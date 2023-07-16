@@ -635,17 +635,11 @@ void ST7735_draw_monochrome_vector_image_bckg(uint8_t x_start, uint8_t y_start,I
 		{
 			if (image->data[i + 1] == 1)
 			{
-				uint8_t data1 =  (color >> 8);
-				uint8_t data2 = (color);
-
-				lcd7735_sendData(data1);
-				lcd7735_sendData(data2);
+				lcd7735_sendData((uint8_t)(color >> 8));
+				lcd7735_sendData((uint8_t)(color));
 			} else {
-				uint8_t data3 = (background_color >> 8);
-				uint8_t data4 = (background_color);
-
-				lcd7735_sendData(data3);
-				lcd7735_sendData(data4);
+				lcd7735_sendData((uint8_t)(background_color >> 8));
+				lcd7735_sendData((uint8_t)(background_color));
 			}
 			count++;
 		}
